@@ -36,3 +36,61 @@
     transform: rotate(360deg);
   }
 }
+
+.brand-logo {
+  margin-left: 5px;
+}
+
+.auth-card {
+  padding: 20px;
+  max-width: 500px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.input-field {
+  color: white;
+}
+
+.bottom-heading {
+  font-size: 15px;
+  color: white !important;
+}
+
+.profile {
+  margin-right: 25px;
+  font-size: "15px";
+  display: inline-block;
+}
+
+.profile-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 80%;
+  margin: 15px auto;
+}
+
+.profile-item {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.post-card {
+  text-align: center;
+  margin: 50px 50px;
+}
+
+.home-card {
+  max-width: 50%;
+  height: max-content;
+  margin: 25px auto;
+}
+
+.post_header_image {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  margin-bottom: -15px;
+  margin: 0 2px;
+}

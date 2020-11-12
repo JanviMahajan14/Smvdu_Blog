@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
+const cors = require("cors");
 const { MONGO_URI } = require('./config/keys');
 const PORT = process.env.PORT || 5000;
 
@@ -16,7 +17,7 @@ mongoose.connection.on('error', (err) => {
     console.log("connecting ", err)
 })
 
-require("./models/user");
+app.use(cors());
 app.use(express.json());
 app.use(require("./routes/auth"));
 

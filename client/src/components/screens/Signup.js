@@ -43,7 +43,7 @@ const Signup = () => {
     return (
         <div class="card blue-grey darken-1 auth-card">
             <div class="card-content white-text">
-                <span class="card-title">BUDDY</span>
+                <span class="card-title">WELCOME !</span>
                 <input className="input-field" type="text" placeholder="Username" value={Username} onChange={(e)=>setUsername(e.target.value)} />
                 <input className="input-field" type="text" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
                 <input className="input-field" type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
