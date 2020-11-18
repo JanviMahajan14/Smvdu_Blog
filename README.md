@@ -10,4 +10,4 @@ but will also provide you a specific section for sharing and downloading your no
 so all the nerds and geeks are also welcome.
 Apart from this, the website also provides you a chat option,
 thus allowing you to connect to your classmates, juniors and even to your seniors for seeking help.
-This platform is created using javascript
+This platform is created using javascript and HTML
