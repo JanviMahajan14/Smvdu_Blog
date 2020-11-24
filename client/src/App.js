@@ -1,8 +1,13 @@
 import React, { useEffect, createContext, useReducer, useContext } from "react";
 import Navbar from "./components/Navbar";
 import { BrowserRouter, Route, useHistory } from "react-router-dom";
+import Home from './components/screens/Home';
 import Signup from "./components/screens/Signup";
 import Login from "./components/screens/Login";
+import Profile from './components/screens/Profile';
+import People from './components/screens/People';
+import Createpost from './components/screens/Createpost';
+import Explore from './components/screens/Explore';
 import "./App.css";
 import { initial_state, reducer } from "./Reducers/userReducer";
 
@@ -22,12 +27,13 @@ const Routing = () => {
 
   return (
     <>
-      <Route path="/signup">
-        <Signup />
-      </Route>
-      <Route path="/login">
-        <Login />
-      </Route>
+      <Route exact path='/'><Home /></Route>
+      <Route path="/signup"><Signup /></Route>
+      <Route path="/login"><Login /></Route>
+      <Route exact path='/profile'><Profile /></Route>
+      <Route path='/newpost'><Createpost /></Route>
+      <Route path='/profile/:id'><People /></Route>
+      <Route path='/explore'><Explore /></Route>
     </>
   );
 };

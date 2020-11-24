@@ -94,7 +94,6 @@ const People = () => {
                                             Follow
                                     </a>
                                 }
-                                <a class="waves-effect waves-light btn-small blue darken-2">Message</a>
                             </div>
                         </div>
                     </div>
