@@ -1,8 +1,17 @@
 const express = require("express");
 const bcrypt = require("bcrypt");
 const auth = require("../middlewares/auth");
+const nodemailer = require("nodemailer");
 const User = require("../models/user");
 const router = new express.Router();
+
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: "soni.anakhya@gmail.com",
+    pass: "pass$word#11",
+  },
+});
 
 router.get("/", (req, res) => {
   res.send("Hello world");
@@ -23,6 +32,22 @@ router.post("/users/signup", async (req, res) => {
     const token = await user.generateAuthToken();
     await user.save();
     res.send({ user, token });
+
+    const mailOptions = {
+     from: 'noreply-smvdu@gmail.com',
+     to: email,
+     subject: 'Smvdu Blog',
+     text : `Hello ${Username} Welcome to Smvdu Blog!`
+    };
+
+    transporter.sendMail(mailOptions, function(error, info){
+     if (error) {
+         console.log(error);
+     } else {
+         console.log('Email sent: ' + info.response);
+     }
+      
+});
   } catch (error) {
     res.statusCode = 400;
     res.send({ error: error.message });
