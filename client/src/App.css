@@ -94,3 +94,7 @@
   margin-bottom: -15px;
   margin: 0 2px;
 }
+
+.collection-item {
+  width: 100%;
+}
