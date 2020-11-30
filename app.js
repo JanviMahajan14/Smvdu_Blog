@@ -22,6 +22,7 @@ app.use(express.json());
 app.use(require("./routes/auth"));
 app.use(require('./routes/post'));
 app.use(require('./routes/people'));
+app.use(require('./routes/file'));
 
 app.listen(PORT, () => {
     console.log("Server is running on ", PORT);
