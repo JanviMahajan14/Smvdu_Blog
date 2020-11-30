@@ -9,6 +9,7 @@ import People from './components/screens/People';
 import Createpost from './components/screens/Createpost';
 import Explore from './components/screens/Explore';
 import Notes from './components/screens/Notes';
+import FileList from './components/screens/FileList';
 import "./App.css";
 import { initial_state, reducer } from "./Reducers/userReducer";
 
@@ -36,6 +37,7 @@ const Routing = () => {
       <Route path='/profile/:id'><People /></Route>
       <Route path='/explore'><Explore /></Route>
       <Route path='/notes'><Notes /></Route>
+      <Route path='/savednotes'><FileList /></Route>
     </>
   );
 };

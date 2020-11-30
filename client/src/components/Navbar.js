@@ -21,6 +21,7 @@ const Navbar = () => {
                 <>
                     <li><i class="modal-trigger material-icons" data-target="modal1" style={{cursor:"pointer"}}>search</i></li>
                     <li><Link to="/notes">Notes</Link></li>
+                     <li><Link to="/savedNotes">SavedNotes</Link></li>
                     <li><Link to="/explore">Explore</Link></li>
                     <li><Link to="/profile">Profile</Link></li>
                     <li><Link to="/newpost">Add Post</Link></li>

@@ -68,7 +68,7 @@ Router.get('/getAllFiles', auth, async (req, res) => {
   }
 });
 
-Router.get('/download/:id', auth, async (req, res) => {
+Router.get('/download/:id', async (req, res) => {
   try {
     const file = await File.findById(req.params.id);
     res.set({
