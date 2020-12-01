@@ -10,6 +10,25 @@ router.post('/newpost', auth, async (req, res) => {
             return res.status(400).send({ error: "Please fill all the fields" })
         }
 
+        let profanityWords = new Map();
+        profanityWords.set('fuck', 1);
+        profanityWords.set('bastard', 2);
+        profanityWords.set('ass', 3);
+        profanityWords.set('die', 4);
+        profanityWords.set('suicide', 5);
+        profanityWords.set('kill', 6);
+        profanityWords.set('hate', 7);
+        profanityWords.set('asshole', 8);
+        profanityWords.set('bitch', 9);
+        profanityWords.set('murder', 10);
+        
+        const arraynames = body.split(" ");
+        for (i = 0; i < arraynames.length; i++) {
+            if (profanityWords.has(arraynames[i].toLowerCase())) {
+                return res.status(400).send({ error: "You must not say that!!"})
+            }
+        }
+
         req.user.password = undefined;
         const post = new Post({
             title,
