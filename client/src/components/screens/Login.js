@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import { useHistory } from "react-router-dom";
 import { userContext } from '../../App';
 import M from 'materialize-css';
+import img from '../../img/bg.jpg';
 
 const Login = () => {
     const history = useHistory();
@@ -38,16 +39,25 @@ const Login = () => {
         }
     }
     return (
-        <div class="card blue-grey darken-1 auth-card">
-            <div class="card-content white-text">
-                <span class="card-title">WELCOME !</span>
-                <input className="input-field" type="text" placeholder="Email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
-                <input className="input-field" type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
-            </div>
-            <div class="card-action">
-                <button class="btn waves-effect waves-light" type="submit" name="action" onClick={() => postData()}>
-                Login 
-                </button>
+        <div style={{  // FOR BACKGROUD img
+            border: "0.1px solid blue",
+            height: "100vh",
+            backgroundImage: `url("${img}")`,
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover"
+        }}>
+            <div class="card blue-grey darken-1 auth-card">
+                <div class="card-content white-text">
+                    <span class="card-title">WELCOME !</span>
+                    <input className="input-field" type="text" placeholder="Email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
+                    <input className="input-field" type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+                </div>
+                <div class="card-action">
+                    <button class="btn waves-effect waves-light" type="submit" name="action" onClick={() => postData()}>
+                    Login 
+                    </button>
+                </div>
             </div>
         </div>
     );

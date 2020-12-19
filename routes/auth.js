@@ -37,7 +37,7 @@ router.post("/users/signup", async (req, res) => {
      from: 'noreply-smvdu@gmail.com',
      to: email,
      subject: 'Smvdu Blog',
-     text : `Hello ${Username} Welcome to Smvdu Blog!`
+     html : `<h3> Hello ${Username} \n Welcome to Smvdu Blog!<\h3>`
     };
 
     transporter.sendMail(mailOptions, function(error, info){

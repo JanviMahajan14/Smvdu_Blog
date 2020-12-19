@@ -172,7 +172,7 @@ const Home = () => {
                                     }
                                 </h5>
                             </div>
-                            <div className="card-image"><img src={post.photo} /></div>
+                            <div className="card-image"><img src={post.photo} height="400px"/></div>
                             <div className="card-content">
                                 {post.likes.includes(userState._id)
                                     ?
@@ -181,7 +181,7 @@ const Home = () => {
                                     <i class="material-icons" style={{ cursor: "pointer" }} onClick={() => {handleLike(post._id)}}>favorite_border</i>
                                 }
                                 <h6>{post.likes.length} likes</h6>
-                                <h6>{post.title}</h6>
+                                <h6><b>{post.title}</b></h6>
                                 <p>{post.body}</p>
 
                                 {post.comments.map((record) => {

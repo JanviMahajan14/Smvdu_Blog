@@ -61,7 +61,9 @@ const Createpost = () => {
     }
 
     return (
-        <div class="card blue-grey darken-1 post-card">
+        <div>
+            <div style={{ backgroundColor: "#01579b", color: "white", fontSize: "25px" }}><p style={{ margin: "0px", marginLeft: "20px" }}>Add New Post <i class="fa fa-plus-circle" aria-hidden="true"></i></p></div>
+            <div class="card blue-grey darken-1 post-card">
             <div class="card-content white-text">
                 <input className="input-field" type="text" placeholder="Title" value={title} onChange={(e) => setTitle(e.target.value)} />
                 <input className="input-field" type="text" placeholder="What's on your mind!" value={body} onChange={(e) => setBody(e.target.value)} />
@@ -80,6 +82,7 @@ const Createpost = () => {
                     Add Post
                 </button>
             </div>
+        </div>
         </div>
     );
 }

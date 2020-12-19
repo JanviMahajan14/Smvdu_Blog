@@ -73,8 +73,9 @@ const updateBorder = (dragState) => {
 };
 
     return (
-        <div className="header" style={{margin:"30px"}}>
-            <h5>Share and download notes</h5>
+      <div className="header">
+        <div style={{ backgroundColor: "#01579b", color: "white", fontSize: "25px" }}><p style={{ margin: "0px", marginLeft: "20px"}}>Notes 📑</p></div>
+        <h5>Share and download notes  <i class="fa fa-share-alt" aria-hidden="true"></i></h5>
             <div>
                 <a class="waves-effect waves-light btn-small" style={{marginRight:"20px"}}><Link to='/notes/'exact={true} style={{color:"white"}}><i class="material-icons left">cloud</i>Home</Link></a>
                 <a class="waves-effect waves-light btn-small"><Link to='/notes/list' style={{color:"white"}}><i class="material-icons right">cloud</i>Files</Link></a>

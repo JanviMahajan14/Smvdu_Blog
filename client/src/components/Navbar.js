@@ -2,7 +2,7 @@ import React, { useContext, useRef, useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { userContext } from '../App'
 import M from 'materialize-css';
-
+import img from '../img/logo.PNG';
 
 const Navbar = () => {
     const SearchModal = useRef(null);
@@ -60,7 +60,8 @@ const Navbar = () => {
 
     return(
         <nav>
-           <div className="nav-wrapper  light-blue darken-1">
+            <div className="nav-wrapper orange lighten-1">
+                <a href="#"> <img src={img} width="100px" height="65px" /></a>
                 <Link to={userState ? '/' : '/signup'} className="brand-logo">Smvdu Blog</Link>
                 <ul id="nav-mobile" className="right hide-on-med-and-down">
                     {renderList()}

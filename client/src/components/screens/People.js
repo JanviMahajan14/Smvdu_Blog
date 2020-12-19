@@ -88,7 +88,7 @@ const People = () => {
                                             Following
                                     </a>
                                         :
-                                        <a class="waves-effect waves-light btn-small blue darken-2"
+                                        <a class="waves-effect waves-light btn-small orange darken-4"
                                             style={{ marginRight: "15px" }}
                                             onClick={() => followUser(newUser._id)}>
                                             Follow
