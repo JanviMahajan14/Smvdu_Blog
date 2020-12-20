@@ -40,9 +40,10 @@ const FilesList = () => {
     }
   };
   return (
-    <div className="files-container">
-      {errorMsg && <p className="errorMsg">{errorMsg}</p>}
+    <div>
       <div style={{ backgroundColor: "#01579b", color: "white", fontSize: "25px" }}><p style={{ margin: "0px", marginLeft: "20px" }}>Saved Notes 📖</p></div>
+      <div className="files-container">
+      {errorMsg && <p className="errorMsg">{errorMsg}</p>}
       <h5 style={{ color: "#039be5", margin: "20px" }}>Download your Notes <i class="fa fa-download" aria-hidden="true"></i> </h5>
       <table className="files-table" style={{marginLeft:"20px"}}>
         <thead>
@@ -81,6 +82,7 @@ const FilesList = () => {
           )}
         </tbody>
       </table>
+    </div>
     </div>
   );
 };

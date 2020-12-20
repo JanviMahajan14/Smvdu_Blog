@@ -13,6 +13,8 @@ Apart from this, the website also provides you a chat option,
 thus allowing you to connect to your classmates, juniors and even to your seniors for seeking help.
 This platform is created using javascript and HTML
 
+You can view the screenshots of the app [here](https://github.com/JanviMahajan14/Smvdu_Blog/tree/main/Screenshots)
+
 ## Development
 
 ### Backend
@@ -65,4 +67,12 @@ npm start
 /profile/:id ( to see your own profile)
 /follow ( to follow other users)
 /unfollow ( to unfollow users)
+```
+
+### Notes
+
+```sh
+/notes/upload ( to upload notes)
+/getAllFiles ( to view all the notes posted in the blog)
+/download/:id ( to download notes)
 ```
