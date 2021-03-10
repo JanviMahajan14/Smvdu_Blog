@@ -1,17 +1,17 @@
 # Smvdu_Blog
 
-To read and to write,
-To know and to be known,
-Not among your fellow classmates,
-But among the whole university.
-We present you your very own university's blog site,
-//URL of the website
-This blog will not only let you post your thoughts, images etc on the blog,
-but will also provide you a specific section for sharing and downloading your notes;
-so all the nerds and geeks are also welcome.
-Apart from this, the website also provides you a chat option (still in progress),
-thus allowing you to connect to your classmates, juniors and even to your seniors for seeking help.
-This platform is created using javascript and HTML
+A blog website to connect students of SMVDU together 🚀. This blog will not only let you post your thoughts, images etc on the blog, but will also provide you a specific section for sharing and downloading your notes. The platform is created using MERN stack and uses Context API for state management.
+
+## Features and Functionalities 😃
+
+- User Signup and Login
+- Add Post
+- Delete Post
+- Like, comment on the post
+- Follow and unfollow other users
+- Upload and download class notes in pdf format
+- Upload a profile picture
+- Search bar in the CMS
 
 You can view the screenshots of the app [here](https://github.com/JanviMahajan14/Smvdu_Blog/blob/main/Screenshots.md)
 
